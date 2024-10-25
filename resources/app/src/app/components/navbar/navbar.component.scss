@@ -1,0 +1,13 @@
+@mixin route {
+    @apply px-3 py-2 text-sm text-gray-700 hover:text-gray-900;
+}
+
+.route {
+    @include route;
+}
+
+.activated-route {
+    @include route;
+
+    @apply font-medium text-gray-900;
+}

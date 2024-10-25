@@ -21,16 +21,14 @@
             </div>
             <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div class="flex flex-shrink-0 items-center">
-                    <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
-                        alt="Your Company">
+                    <img [routerLink]="['/dashboard']" class="h-8 w-auto cursor-pointer" src="assets/images/logo-big.png" alt="Rijschool Njoy Logo">
                 </div>
                 <div class="hidden sm:ml-6 sm:block">
                     <div class="flex space-x-4">
-                        <a href="#"
-                            class="px-3 py-2 text-sm font-medium text-gray-900 hover:text-gray-900">Dashboard</a>
-                        <a href="#" class="px-3 py-2 text-sm text-gray-700 hover:text-gray-900">Team</a>
-                        <a href="#" class="px-3 py-2 text-sm text-gray-700 hover:text-gray-900">Projects</a>
-                        <a href="#" class="px-3 py-2 text-sm text-gray-700 hover:text-gray-900">Calendar</a>
+                        <a [routerLink]="['/dashboard']" [ngClass]="isActive('/dashboard')">Dashboard</a>
+                        <a [routerLink]="['/team']" [ngClass]="isActive('/team')">Team</a>
+                        <a [routerLink]="['/projects']" [ngClass]="isActive('/projects')">Projects</a>
+                        <a [routerLink]="['/calendar']" [ngClass]="isActive('/calendar')">Calendar</a>
                     </div>
                 </div>
             </div>
@@ -40,15 +38,15 @@
     <!-- Mobile menu, show/hide based on menu state. -->
     <div class="sm:hidden" id="mobile-menu" [ngClass]="{'block': isOpen, 'hidden': !isOpen}">
         <div class="space-y-1 px-2 pb-3 pt-2">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
-                aria-current="page">Dashboard</a>
-            <a href="#"
-                class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
-            <a href="#"
-                class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
-            <a href="#"
-                class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+            @for (route of routes; track route.path) {
+                <a
+                    [routerLink]="[route.path]"
+                    [ngClass]="isActive(route.path)"
+                    class="block rounded-md px-3 py-2 text-base font-medium"
+                >
+                    {{ route.label }}
+                </a>
+            }
         </div>
     </div>
 </nav>
