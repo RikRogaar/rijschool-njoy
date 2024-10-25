@@ -3,32 +3,50 @@
         <div class="relative flex h-16 items-center justify-between">
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <!-- Mobile menu button-->
-                <button type="button" (click)="toggleMobileMenu()"
-                    class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                    aria-controls="mobile-menu" [attr.aria-expanded]="isOpen">
+                <button
+                    type="button"
+                    (click)="toggleMobileMenu()"
+                    class="relative inline-flex items-center justify-center rounded-md p-2 text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                    aria-controls="mobile-menu"
+                    [attr.aria-expanded]="isOpen"
+                >
                     <span class="absolute -inset-0.5"></span>
                     <span class="sr-only">Open main menu</span>
-                    <svg [ngClass]="{'hidden': isOpen, 'block': !isOpen}" class="h-6 w-6" fill="none"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <svg
+                        [ngClass]="{'hidden': isOpen, 'block': !isOpen}"
+                        class="h-6 w-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                    >
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
-                    <svg [ngClass]="{'block': isOpen, 'hidden': !isOpen}" class="h-6 w-6" fill="none"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <svg
+                        [ngClass]="{'block': isOpen, 'hidden': !isOpen}"
+                        class="h-6 w-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                    >
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
             </div>
-            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
                 <div class="flex flex-shrink-0 items-center">
                     <img [routerLink]="['/dashboard']" class="h-8 w-auto cursor-pointer" src="assets/images/logo-big.png" alt="Rijschool Njoy Logo">
                 </div>
                 <div class="hidden sm:ml-6 sm:block">
                     <div class="flex space-x-4">
-                        <a [routerLink]="['/dashboard']" [ngClass]="isActive('/dashboard')">Dashboard</a>
-                        <a [routerLink]="['/team']" [ngClass]="isActive('/team')">Team</a>
-                        <a [routerLink]="['/projects']" [ngClass]="isActive('/projects')">Projects</a>
-                        <a [routerLink]="['/calendar']" [ngClass]="isActive('/calendar')">Calendar</a>
+                        <a [routerLink]="['/dashboard']" [ngClass]="isActiveClass('/dashboard')">Dashboard</a>
+                        <a [routerLink]="['/team']" [ngClass]="isActiveClass('/team')">Team</a>
+                        <a [routerLink]="['/projects']" [ngClass]="isActiveClass('/projects')">Projects</a>
+                        <a [routerLink]="['/calendar']" [ngClass]="isActiveClass('/calendar')">Calendar</a>
                     </div>
                 </div>
             </div>
@@ -41,10 +59,10 @@
             @for (route of routes; track route.path) {
                 <a
                     [routerLink]="[route.path]"
-                    [ngClass]="isActive(route.path)"
-                    class="block rounded-md px-3 py-2 text-base font-medium"
+                    [ngClass]="isActiveClass(route.path, true)"
+                    class="block rounded-md px-3 py-2 text-lg font-medium"
                 >
-                    {{ route.label }}
+                    <span>{{ route.label }}</span>
                 </a>
             }
         </div>

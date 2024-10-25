@@ -21,21 +21,30 @@ export class NavbarComponent {
     { path: '/projects', label: 'Projects' },
     { path: '/calendar', label: 'Calendar' },
   ];
-  
+
   public isOpen = false;
 
   public toggleMobileMenu() {
     this.isOpen = !this.isOpen;
   }
 
-  public isActive(path: string): string {
-    const isActive = this.router.isActive(path, {
+  public isActive(path: string): boolean {
+    return this.router.isActive(path, {
       paths: 'exact',
       queryParams: 'ignored',
       fragment: 'ignored',
       matrixParams: 'ignored'
     });
 
-    return isActive ? 'activated-route' : 'route';
+  }
+
+  public isActiveClass(path: string, mobile: boolean = false): string {
+    let className = this.isActive(path) ? 'activated-route' : 'route';
+
+    if (this.isActive(path) && mobile) {
+      className += ' mobile-selected';
+    }
+
+    return className;
   }
 }

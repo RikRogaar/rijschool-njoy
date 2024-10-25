@@ -11,3 +11,9 @@
 
     @apply font-medium text-gray-900;
 }
+
+.mobile-selected {
+    span {
+        @apply border-b-2 border-theme-blue;
+    }
+}
