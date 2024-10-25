@@ -1,0 +1,53 @@
+{
+    "DASHBOARD": {
+        "HERO": {
+            "HEADER": "Leer zelfverzekerd autorijden",
+            "SUBHEADER": "Opzoek naar een goede, leuke rijopleiding waarin alle aspecten van het rijden aan bod komen?",
+            "BOOK_LESSON": "Boek een les",
+            "LEARN_MORE": "Leer meer"
+        },
+        "INFO_CARDS": {
+            "TITLE": "Welkom bij Rijschool Njoy!",
+            "CARD_1": {
+                "TITLE": "Praktijk",
+                "DESCRIPTION": "Rijschool Njoy staat garant voor een leuke, leerzame en voordelige rijopleiding. Meld je vandaag nog aan."
+            },
+            "CARD_2": {
+                "TITLE": "Theorie",
+                "DESCRIPTION": "Ook voor een theorie opleiding ben je bij rijschool Njoy aan het juiste adres. Online, boek en klassikaal."
+            },
+            "CARD_3": {
+                "TITLE": "16.5 Jaar",
+                "DESCRIPTION": "Rijles als je 16,5 jaar wordt en afrijden als je 17 bent, hoe vet is dat?! Lees alles over 2todrive hier."
+            }
+        },
+        "": {
+
+        },
+        "ABOUT": {
+            "TITLE": "Over Rijschool Njoy",
+            "DESCRIPTION": "Wil je je rijbewijs halen? Rijschool Njoy is de juiste plek voor jou! Ons doel is om je op te leiden tot een bekwame bestuurder met zo min mogelijk lessen, zodat je na het behalen van je rijbewijs verantwoordelijk en met een gevoel van veiligheid kunt deelnemen aan het verkeer.",
+            "SUBDESCRIPTION": "Rijschool Njoy garandeert een leuke, leerzame en betaalbare rijopleiding. Wij staan voor kwaliteit, wat duidelijk blijkt uit onze lesmethoden en de moderne apparatuur waarmee we werken.",
+            "REASONS": {
+                "TITLE": "Waarom Rijschool Njoy?",
+                "FOOTER": "Bij Rijschool Njoy, slaag je altijd! Heb je vragen? Neem dan gerust contact met ons op.",
+                "REASON_1": {
+                    "TITLE": "Lessons in a modern Kia Sportage Hybrid",
+                    "DESCRIPTION": "Rijschool Njoy gebruikt moderne auto's om jou te trainen. De Kia Sportage Hybrid is een moderne auto met een elektrische motor en een benzine motor, wat betekent dat je kunt rijden zonder gebruik te maken van fossiele brandstoffen."
+                },
+                "REASON_2": {
+                    "TITLE": "Consistent instruction from an experienced, WRM-certified instructor",
+                    "DESCRIPTION": "Our instructors are experienced and WRM-certified, ensuring consistent and high-quality instruction throughout your driving lessons."
+                },
+                "REASON_3": {
+                    "TITLE": "Affordable driving lessons",
+                    "DESCRIPTION": "We offer affordable driving lessons to help you save money while learning to drive."
+                },
+                "REASON_4": {
+                    "TITLE": "Flexible scheduling",
+                    "DESCRIPTION": "Our flexible scheduling allows you to choose the best time for your lessons, whether it's early mornings, evenings, or weekends."
+                }
+            }
+        }
+    }
+}

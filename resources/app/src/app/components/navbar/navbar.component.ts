@@ -1,13 +1,12 @@
-import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
-import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
+import { SharedModule } from '../../shared.module';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
   imports: [
-    CommonModule,
-    RouterLink,
+    SharedModule,
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
