@@ -1,0 +1,78 @@
+<main class="flex-1 pt-14">
+  <section class="w-full py-12 md:py-24 lg:py-32 bg-theme-blue">
+    <div class="container px-4 md:px-6">
+      <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-white text-center">
+        Tarieven 2024
+      </h1>
+      <p class="mt-4 text-xl text-white/80 text-center max-w-[700px] mx-auto">
+        Ontdek onze competitieve prijzen voor rijlessen en pakketten. Kies het pakket dat het beste bij jou past.
+      </p>
+    </div>
+  </section>
+
+  <section class="w-full py-12 md:py-24 lg:py-32">
+    <div class="container px-4 md:px-6">
+      <hlm-tabs [tab]="currentTab()" class="w-full">
+        <hlm-tabs-list class="grid w-full grid-cols-2 mb-8">
+          <button hlmTabsTrigger="packages">Pakketten</button>
+          <button hlmTabsTrigger="looseItems">Losse Items</button>
+        </hlm-tabs-list>
+
+        <div hlmTabsContent="packages">
+          <div class="grid gap-6 lg:grid-cols-3">
+            @for (package of packages; track package.name) {
+              <section hlmCard [class.border-green-500]="package.popular" [class.border-2]="package.popular">
+                <div hlmCardHeader>
+                  <h1 class="text-xl font-bold" hlmCardTitle>{{ package.name }}</h1>
+                  @if (package.popular) {
+                    <span class="text-green-500 font-semibold">Meest Gekozen!</span>
+                  }
+                </div>
+                <div hlmCardContent>
+                  <p class="text-3xl font-bold mb-4">{{ package.price }}</p>
+                  <ul class="space-y-2">
+                    @for (feature of package.features; track feature.name) {
+                      <li class="flex items-center">
+                        @if (feature.included) {
+                          <hlm-icon size="sm" name="lucideCheck" class="mr-2 h-4 w-4 text-green-500" />
+                        } @else {
+                          <hlm-icon size="sm" name="lucideX" class="mr-2 h-4 w-4 text-red-500" />
+                        }
+                        <span>{{ feature.name }}</span>
+                      </li>
+                    }
+                  </ul>
+                </div>
+                <div hlmCardFooter>
+                  <button hlmBtn class="w-full bg-theme-blue hover:bg-theme-blue/90">Aanvragen</button>
+                </div>
+              </section>
+            }
+          </div>
+        </div>
+
+        <div [hlmTabsContent]="'looseItems'">
+          <section hlmCard>
+            <div hlmCardHeader>
+              <h1 hlmCardTitle>Losse Lessen</h1>
+            </div>
+            <div hlmCardContent>
+              <ul class="space-y-2">
+                <!-- @for (item of looseItems; track item.name) {
+                  <li class="flex justify-between">
+                    <span>{{ item.name }}</span>
+                    <span class="font-semibold">{{ item.price }}</span>
+                  </li>
+                } -->
+              </ul>
+            </div>
+          </section>
+          <div class="mt-4 text-sm">
+            <p>* Alleen als je gaat lessen bij Njoy wordt dit bedrag verrekend met je pakket of losse les.</p>
+            <p>**TTT = tussentijdse toets</p>
+          </div>
+        </div>
+      </hlm-tabs>
+    </div>
+  </section>
+</main>

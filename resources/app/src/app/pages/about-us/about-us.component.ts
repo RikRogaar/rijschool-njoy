@@ -22,14 +22,12 @@ import { HlmTabsComponent, HlmTabsListComponent, HlmTabsTriggerDirective, HlmTab
     HlmTabsListComponent,
     HlmTabsTriggerDirective,
     HlmTabsContentDirective,
-
     HlmCardContentDirective,
     HlmCardDescriptionDirective,
     HlmCardDirective,
     HlmCardFooterDirective,
     HlmCardHeaderDirective,
     HlmCardTitleDirective,
-
     HlmButtonDirective,
     HlmIconModule,
     SharedModule
