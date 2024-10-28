@@ -15,10 +15,8 @@ export class NavbarComponent {
   private readonly router = inject(Router);
 
   public readonly routes = [
-    { path: '/dashboard', label: 'Dashboard' },
-    { path: '/team', label: 'Team' },
-    { path: '/projects', label: 'Projects' },
-    { path: '/calendar', label: 'Calendar' },
+    { path: '/dashboard', label: 'NAVBAR.DASHBOARD' },
+    { path: '/about-us', label: 'NAVBAR.ABOUT_US' },
   ];
 
   public isOpen = false;

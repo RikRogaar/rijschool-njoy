@@ -1,4 +1,8 @@
 {
+    "NAVBAR": {
+        "DASHBOARD": "Home",
+        "ABOUT_US": "Over ons"
+    },
     "DASHBOARD": {
         "HERO": {
             "HEADER": "Leer zelfverzekerd autorijden",
@@ -48,6 +52,83 @@
                     "DESCRIPTION": "Our flexible scheduling allows you to choose the best time for your lessons, whether it's early mornings, evenings, or weekends."
                 }
             }
+        },
+        "CONTACT": {
+            "HEADER": "Klaar om te beginnen?",
+            "DESCRIPTION": "Boek nu je proefles vandaag nog en neem je eerste stap om een zelfverzekerde bestuurder te worden.",
+            "BUTTON": "Boek je proefles"
+        }
+    },
+    "ABOUT_US": {
+        "HERO": {
+            "TITLE": "Over Rijschool Njoy",
+            "DESCRIPTION": "Kwaliteit, expertise, excellente service en betaalbare tarieven. Probeer het zelf uit met een gratis proefles!",
+            "BUTTON": "Boek je proefles"
+        },
+        "ABOUT": {
+            "TITLE": "Ons Doel",
+            "PROFESSIONAL": {
+                "TITLE": "Professioneel",
+                "DESCRIPTION": "Bij Rijschool Njoy leer je op een professionele, geduldige en ontspannen manier een goede en veilige bestuurder te worden. We gebruiken moderne auto's uitgerust met geavanceerde navigatiesystemen en geven les volgens de nieuwste veiligheids- en milieunormen."
+            },
+            "PERSONAL": {
+                "TITLE": "Persoonlijk",
+                "DESCRIPTION": "Wij bieden een persoonlijke aanpak voor elke leerling, waarbij we ons aanpassen aan individuele leertempo's en niveaus. Je voortgang wordt bijgehouden en je bent altijd de enige leerling in de auto tijdens de lessen."
+            },
+            "FLEXIBLE": {
+                "TITLE": "Flexibel",
+                "DESCRIPTION": "Je kunt lessen wanneer het jou het beste uitkomt - vroeg in de ochtend, middag of avond. We kunnen je zelfs ophalen van school of werk. Bij Rijschool Njoy passen wij ons aan jouw schema aan!"
+            }
+        },
+        "INSTRUCTOR": {
+            "TITLE": "Ontmoet je instructeur",
+            "DESCRIPTION": "Hallo, ik ben Gerard Blaauw, jouw gedreven instructeur bij Rijschool Njoy. Met jaren ervaring als internationale vrachtwagenchauffeur, heb ik het alles op de weg gezien. Mijn missie is om deze rijervaring aan te dragen aan nieuwe en ervaren bestuurders, door hen de juiste rijtechniek en gedrag aan te leren.",
+            "SUBDESCRIPTION": "Bij Rijschool Njoy, heb je dezelfde instructeur voor je hele cursus. Deze consistentie zorgt ervoor dat je ontvangt aangepaste instructie op basis van je voortgang en behoeften."
+        },
+        "CAR": {
+            "TITLE": "Ons Training Auto",
+            "DESCRIPTION": "De Kia Sportage Hybrid is een moderne auto met een elektrische motor en een benzine motor, wat betekent dat je kunt rijden zonder gebruik te maken van fossiele brandstoffen.",
+            "ABOUT": {
+                "TITLE": "Kia Sportage (Handmatige Versnellingsbak)",
+                "DESCRIPTION": "Onze hybrid Kia Sportage is gekozen voor zijn hoge comfortniveau, geavanceerde functies en uitstekende veiligheidsratings. Het is de perfecte auto om te leren rijden en om rijtechniek te ontwikkelen."
+            },
+            "TABS": {
+                "FEATURES": {
+                    "TITLE": "Features",
+                    "DESCRIPTION": "De Kia Sportage Hybrid is een moderne auto met een elektrische motor en een benzine motor, wat betekent dat je kunt rijden zonder gebruik te maken van fossiele brandstoffen.",
+                    "LIST": [
+                        "Integreerde navigatiesysteem",
+                        "Geavanceerde rijbegeleiding (ADAS)",
+                        "Flexible rijdynamiek, perfect voor leren",
+                        "Promoot duurzaam rijden met tot 20% minder brandstofverbruik"
+                    ]
+                },
+                "COMFORT": {
+                    "TITLE": "Comfort voor Alle",
+                    "DESCRIPTION": "De Kia Sportage Hybrid is een moderne auto met een elektrische motor en een benzine motor, wat betekent dat je kunt rijden zonder gebruik te maken van fossiele brandstoffen.",
+                    "LIST": [
+                        "Geschikt voor zowel korte als lange personen (2m+ is geen probleem)",
+                        "Volledig aanpasbare zittingen voor optimale positie",
+                        "Aanpasbare stuurwielen voor maximale comfort",
+                        "Luchtconditioning om je te koelen en te focussen"
+                    ]
+                },
+                "SAFETY": {
+                    "TITLE": "Veiligheid",
+                    "DESCRIPTION": "De Kia Sportage Hybrid is een moderne auto met een elektrische motor en een benzine motor, wat betekent dat je kunt rijden zonder gebruik te maken van fossiele brandstoffen.",
+                    "LIST": [
+                        "Maximaal 5-sterren NCAP veiligheidsrating",
+                        "Geavanceerde rijbegeleiding voor verbeterde veiligheid",
+                        "Uitstekende rijdynamiek voor betere controle",
+                        "Excellente brandstofefficiëntie voor een lagere CO2-uitstoot"
+                    ]
+                }
+            }
+        },
+        "BOOK_LESSON": {
+            "TITLE": "Klaar om te beginnen?",
+            "DESCRIPTION": "Boek nu je proefles vandaag nog en neem je eerste stap om een zelfverzekerde bestuurder te worden.",
+            "BUTTON": "Boek je proefles"
         }
     }
 }

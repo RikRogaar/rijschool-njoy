@@ -30,6 +30,9 @@
       ],
       "@spartan-ng/ui-button-helm": [
         "./src/app/components/libs/ui/ui-button-helm/src/index.ts"
+      ],
+      "@spartan-ng/ui-tabs-helm": [
+        "./src/app/components/libs/ui/ui-tabs-helm/src/index.ts"
       ]
     }
   },

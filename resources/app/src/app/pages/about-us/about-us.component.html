@@ -1,0 +1,153 @@
+<main class="flex-1">
+    <section id="hero" class="w-full py-12 md:py-24 lg:py-32 bg-theme-blue">
+        <div class="container px-4 md:px-6">
+            <div class="flex flex-col items-center space-y-4 text-center">
+                <div class="space-y-2">
+                    <h1
+                        class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-white">
+                        {{ 'ABOUT_US.HERO.TITLE' | translate }}
+                    </h1>
+                    <p class="mx-auto max-w-[700px] text-white/90 md:text-xl">
+                        {{ 'ABOUT_US.HERO.DESCRIPTION' | translate }}
+                    </p>
+                </div>
+                <button hlmBtn size="lg" variant="secondary" class="text-theme-blue">{{ 'ABOUT_US.HERO.BUTTON' | translate }}</button>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="w-full py-12 md:py-24 lg:py-32">
+        <div class="container px-4 md:px-6">
+            <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 text-theme-blue">
+                {{ 'ABOUT_US.ABOUT.TITLE' | translate }}
+            </h2>
+            <div class="grid gap-6 lg:grid-cols-3 lg:gap-12">
+                <section hlmCard class="text-center">
+                    <div hlmCardHeader>
+                        <div>
+                            <hlm-icon size="lg" name="lucideShieldCheck" class="text-theme-blue" />
+                            <h1 class="text-2xl" hlmCardTitle>
+                                {{ 'ABOUT_US.ABOUT.PROFESSIONAL.TITLE' | translate }}
+                            </h1>
+                        </div>
+                    </div>
+                    <p hlmCardContent>
+                        {{ 'ABOUT_US.ABOUT.PROFESSIONAL.DESCRIPTION' | translate }}
+                    </p>
+                </section>
+
+                <section hlmCard class="text-center">
+                    <div hlmCardHeader>
+                        <div>
+                            <hlm-icon size="lg" name="lucideUser" class="text-theme-blue" />
+                            <h1 class="text-2xl" hlmCardTitle>
+                                {{ 'ABOUT_US.ABOUT.PERSONAL.TITLE' | translate }}
+                            </h1>
+                        </div>
+                    </div>
+                    <p hlmCardContent>
+                        {{ 'ABOUT_US.ABOUT.PERSONAL.DESCRIPTION' | translate }}
+                    </p>
+                </section>
+
+                <section hlmCard class="text-center">
+                    <div hlmCardHeader>
+                        <div>
+                            <hlm-icon size="lg" name="lucideClock" class="text-theme-blue" />
+                            <h1 class="text-2xl" hlmCardTitle>
+                                {{ 'ABOUT_US.ABOUT.FLEXIBLE.TITLE' | translate }}
+                            </h1>
+                        </div>
+                    </div>
+                    <p hlmCardContent>
+                        {{ 'ABOUT_US.ABOUT.FLEXIBLE.DESCRIPTION' | translate }}
+                    </p>
+                </section>
+            </div>
+        </div>
+    </section>
+    <section id="instructor" class="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+        <div class="container px-4 md:px-6">
+          <div class="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 items-center">
+            <div class="space-y-4">
+              <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-theme-blue">
+                {{ 'ABOUT_US.INSTRUCTOR.TITLE' | translate }}
+              </h2>
+              <p class="text-gray-500 md:text-xl">
+                {{ 'ABOUT_US.INSTRUCTOR.DESCRIPTION' | translate }}
+              </p>
+              <p class="text-gray-500 md:text-xl">
+                {{ 'ABOUT_US.INSTRUCTOR.SUBDESCRIPTION' | translate }}
+              </p>
+            </div>
+            <div class="flex justify-center">
+              <img
+                src="https://placehold.co/400x400"
+                alt="Gerard Blaauw, Instructor at Rijschool Njoy"
+                class="rounded-lg object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="car" class="w-full py-12 md:py-24 lg:py-32">
+        <div class="container px-4 md:px-6">
+          <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12 text-theme-blue">
+            {{ 'ABOUT_US.CAR.TITLE' | translate }}
+          </h2>
+          <div class="grid gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 items-center mb-12">
+            <div>
+              <img
+                src="https://placehold.co/600x400"
+                alt="Kia Sportage - Rijschool Njoy's training vehicle"
+                class="rounded-lg object-cover"
+              />
+            </div>
+            <div class="space-y-4">
+              <h3 class="text-2xl font-bold">{{ 'ABOUT_US.CAR.ABOUT.TITLE' | translate }}</h3>
+              <p class="text-gray-500">
+                {{ 'ABOUT_US.CAR.ABOUT.DESCRIPTION' | translate }}
+              </p>
+            </div>
+          </div>
+          <hlm-tabs [tab]="currentTab()" class="block max-w-6xl mx-auto">
+            <hlm-tabs-list class="w-full grid grid-cols-3" aria-label="tabs example">
+                @for (tab of tabs; track tab.label) {
+                    <button hlmTabsTrigger="{{ tab.label }}">{{ tab.label | titlecase | translate }}</button>
+                }
+            </hlm-tabs-list>
+            @for (tab of tabs; track tab.label) {
+                <div [hlmTabsContent]="tab.label">
+                    <section hlmCard>
+                        <div hlmCardHeader>
+                            <h3 hlmCardTitle>{{ tab.content.title | translate }}</h3>
+                        </div>
+                        <div hlmCardContent class="space-y-2">
+                            <p>{{ tab.content.description | translate }}</p>
+                            <ul class="list-disc pl-4 space-y-1">
+                                @for (item of (tab.content.list | translate); track $index) {
+                                    <li>{{ item }}</li>
+                                }
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            }
+          </hlm-tabs>
+        </div>
+      </section>
+      <section id="book-lesson" class="w-full py-12 md:py-24 lg:py-32 bg-theme-blue">
+        <div class="container px-4 md:px-6">
+          <div class="flex flex-col items-center space-y-4 text-center">
+            <div class="space-y-2">
+              <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
+                {{ 'ABOUT_US.BOOK_LESSON.TITLE' | translate }}
+              </h2>
+              <p class="mx-auto max-w-[700px] text-white/90 md:text-xl">
+                {{ 'ABOUT_US.BOOK_LESSON.DESCRIPTION' | translate }}
+              </p>
+            </div>
+            <button hlmBtn size="lg" variant="secondary" class="text-theme-blue">{{ 'ABOUT_US.BOOK_LESSON.BUTTON' | translate }}</button>
+          </div>
+        </div>
+      </section>
+</main>

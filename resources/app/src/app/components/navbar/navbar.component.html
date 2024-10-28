@@ -43,10 +43,9 @@
                 </div>
                 <div class="hidden sm:ml-6 sm:block">
                     <div class="flex space-x-4">
-                        <a [routerLink]="['/dashboard']" [ngClass]="isActiveClass('/dashboard')">Dashboard</a>
-                        <a [routerLink]="['/team']" [ngClass]="isActiveClass('/team')">Team</a>
-                        <a [routerLink]="['/projects']" [ngClass]="isActiveClass('/projects')">Projects</a>
-                        <a [routerLink]="['/calendar']" [ngClass]="isActiveClass('/calendar')">Calendar</a>
+                        @for (route of routes; track route.path) {
+                            <a [routerLink]="[route.path]" [ngClass]="isActiveClass(route.path)">{{ route.label | translate }}</a>
+                        }
                     </div>
                 </div>
             </div>
@@ -62,7 +61,7 @@
                     [ngClass]="isActiveClass(route.path, true)"
                     class="block rounded-md px-3 py-2 text-lg font-medium"
                 >
-                    <span>{{ route.label }}</span>
+                    <span>{{ route.label | translate }}</span>
                 </a>
             }
         </div>
