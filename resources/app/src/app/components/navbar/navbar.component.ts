@@ -17,6 +17,7 @@ export class NavbarComponent {
   public readonly routes = [
     { path: '/dashboard', label: 'NAVBAR.DASHBOARD' },
     { path: '/about-us', label: 'NAVBAR.ABOUT_US' },
+    { path: '/pricing', label: 'NAVBAR.PRICING' },
   ];
 
   public isOpen = false;
