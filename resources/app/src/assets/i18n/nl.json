@@ -138,6 +138,7 @@
             "DESCRIPTION": "Er zijn meer mogelijkheden, zo kun je in overleg met rijschool Njoy bijvoorbeeld zelf een pakket samenstellen.",
             "PACKAGES": {
                 "NJOY_1": {
+                    "IDENTIFIER": "NJOY_1",
                     "NAME": "Njoy 1",
                     "PRICE": "1870,-",
                     "POPULAR": false,
@@ -165,6 +166,7 @@
                     ]
                 },
                 "NJOY_2": {
+                    "IDENTIFIER": "NJOY_2",
                     "NAME": "Njoy 2",
                     "PRICE": "2145,-",
                     "POPULAR": false,
@@ -192,6 +194,7 @@
                     ]
                 },
                 "NJOY_3": {
+                    "IDENTIFIER": "NJOY_3",
                     "NAME": "Njoy 3",
                     "PRICE": "2155,-",
                     "POPULAR": false,
@@ -219,6 +222,7 @@
                     ]
                 },
                 "NJOY_4": {
+                    "IDENTIFIER": "NJOY_4",
                     "NAME": "Njoy 4",
                     "PRICE": "2430,-",
                     "POPULAR": true,
@@ -246,6 +250,7 @@
                     ]
                 },
                 "NJOY_5": {
+                    "IDENTIFIER": "NJOY_5",
                     "NAME": "Njoy 5",
                     "PRICE": "2465,-",
                     "POPULAR": false,
@@ -273,6 +278,7 @@
                     ]
                 },
                 "NJOY_6": {
+                    "IDENTIFIER": "NJOY_6",
                     "NAME": "Njoy 6",
                     "PRICE": "2740,-",
                     "POPULAR": false,
@@ -300,6 +306,7 @@
                     ]
                 },
                 "NJOY_7": {
+                    "IDENTIFIER": "NJOY_7",
                     "NAME": "Njoy 7",
                     "PRICE": "2890,-",
                     "POPULAR": false,

@@ -20,16 +20,17 @@
 
         <div hlmTabsContent="packages">
           <div class="grid gap-6 lg:grid-cols-3">
-            @for (package of packages; track package.name) {
+            @for (package of packages(); track $index) {
               <section hlmCard [class.border-green-500]="package.popular" [class.border-2]="package.popular">
                 <div hlmCardHeader>
-                  <h1 class="text-xl font-bold" hlmCardTitle>{{ package.name }}</h1>
+
+                  <h1 class="text-xl font-bold" hlmCardTitle>{{ package.name | translate }}</h1>
                   @if (package.popular) {
                     <span class="text-green-500 font-semibold">Meest Gekozen!</span>
                   }
                 </div>
                 <div hlmCardContent>
-                  <p class="text-3xl font-bold mb-4">{{ package.price }}</p>
+                  <p class="text-3xl font-bold mb-4">{{ package.price | translate }}</p>
                   <ul class="space-y-2">
                     @for (feature of package.features; track feature.name) {
                       <li class="flex items-center">
@@ -48,10 +49,16 @@
                 </div>
               </section>
             }
+
+            <div class="mt-4 col-span-3 text-center">
+              <p>Er zijn meer mogelijkheden, zo kun je in overleg met rijschool Njoy bijvoorbeeld zelf een pakket samenstellen.</p>
+              <p>Pakketten kunnen ook in termijnen voldaan worden, vraag naar de mogelijkheden.</p>
+              <p class="font-bold">Bij afname van pakket Njoy 3 t/m 7, nu gratis online itheorie les!</p>
+            </div>
           </div>
         </div>
 
-        <div [hlmTabsContent]="'looseItems'">
+        <div hlmTabsContent="looseItems">
           <section hlmCard>
             <div hlmCardHeader>
               <h1 hlmCardTitle>Losse Lessen</h1>
