@@ -1,7 +1,8 @@
 {
     "NAVBAR": {
         "DASHBOARD": "Home",
-        "ABOUT_US": "Over ons"
+        "ABOUT_US": "Over ons",
+        "PRICING": "Tarieven"
     },
     "DASHBOARD": {
         "HERO": {
@@ -129,6 +130,263 @@
             "TITLE": "Klaar om te beginnen?",
             "DESCRIPTION": "Boek nu je proefles vandaag nog en neem je eerste stap om een zelfverzekerde bestuurder te worden.",
             "BUTTON": "Boek je proefles"
+        }
+    },
+    "PRICING": {
+        "PACKAGES": {
+            "TITLE": "Pakketten",
+            "DESCRIPTION": "Er zijn meer mogelijkheden, zo kun je in overleg met rijschool Njoy bijvoorbeeld zelf een pakket samenstellen.",
+            "PACKAGES": {
+                "NJOY_1": {
+                    "IDENTIFIER": "NJOY_1",
+                    "NAME": "Njoy 1",
+                    "PRICE": "1870,-",
+                    "POPULAR": false,
+                    "FEATURES": [
+                        {
+                            "NAME": "25 lesuren",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Tussentijdse toets",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Examen",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Herexamen",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Gratis theorieles",
+                            "INCLUDED": true
+                        }
+                    ]
+                },
+                "NJOY_2": {
+                    "IDENTIFIER": "NJOY_2",
+                    "NAME": "Njoy 2",
+                    "PRICE": "2145,-",
+                    "POPULAR": false,
+                    "FEATURES": [
+                        {
+                            "NAME": "25 lesuren",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Tussentijdse toets",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Examen",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Herexamen",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Gratis theorieles",
+                            "INCLUDED": true
+                        }
+                    ]
+                },
+                "NJOY_3": {
+                    "IDENTIFIER": "NJOY_3",
+                    "NAME": "Njoy 3",
+                    "PRICE": "2155,-",
+                    "POPULAR": false,
+                    "FEATURES": [
+                        {
+                            "NAME": "30 lesuren",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Tussentijdse toets",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Examen",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Herexamen",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Gratis theorieles",
+                            "INCLUDED": true
+                        }
+                    ]
+                },
+                "NJOY_4": {
+                    "IDENTIFIER": "NJOY_4",
+                    "NAME": "Njoy 4",
+                    "PRICE": "2430,-",
+                    "POPULAR": true,
+                    "FEATURES": [
+                        {
+                            "NAME": "30 lesuren",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Tussentijdse toets",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Examen",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Herexamen",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Gratis theorieles",
+                            "INCLUDED": true
+                        }
+                    ]
+                },
+                "NJOY_5": {
+                    "IDENTIFIER": "NJOY_5",
+                    "NAME": "Njoy 5",
+                    "PRICE": "2465,-",
+                    "POPULAR": false,
+                    "FEATURES": [
+                        {
+                            "NAME": "35 lesuren",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Tussentijdse toets",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Examen",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Herexamen",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Gratis theorieles",
+                            "INCLUDED": true
+                        }
+                    ]
+                },
+                "NJOY_6": {
+                    "IDENTIFIER": "NJOY_6",
+                    "NAME": "Njoy 6",
+                    "PRICE": "2740,-",
+                    "POPULAR": false,
+                    "FEATURES": [
+                        {
+                            "NAME": "35 lesuren",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Tussentijdse toets",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Examen",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Herexamen",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Gratis theorieles",
+                            "INCLUDED": true
+                        }
+                    ]
+                },
+                "NJOY_7": {
+                    "IDENTIFIER": "NJOY_7",
+                    "NAME": "Njoy 7",
+                    "PRICE": "2890,-",
+                    "POPULAR": false,
+                    "FEATURES": [
+                        {
+                            "NAME": "35 lesuren",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Tussentijdse toets",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Examen",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Herexamen",
+                            "INCLUDED": true
+                        },
+                        {
+                            "NAME": "Gratis theorieles",
+                            "INCLUDED": true
+                        }
+                    ]
+                }
+            }
+        },
+        "INDIVIDUAL_LESSONS": {
+            "TITLE": "Losse Lessen",
+            "LESSONS": {
+                "TRIAL": {
+                    "NAME": "Proefles* (60-90 minuten)",
+                    "PRICE": "32,-"
+                },
+                "SINGLE": {
+                    "NAME": "Lesprijs (60 minuten)",
+                    "PRICE": "64,-"
+                },
+                "SINGLE_EXTENDED": {
+                    "NAME": "Lesprijs 1,5u (90 minuten)",
+                    "PRICE": "96,-"
+                },
+                "CARD_5": {
+                    "NAME": "Njoy leskaart 1 | 5 lessen",
+                    "PRICE": "315,-"
+                },
+                "CARD_10": {
+                    "NAME": "Njoy leskaart 2 | 10 lessen",
+                    "PRICE": "630,-"
+                },
+                "REFRESH": {
+                    "NAME": "Njoy opfris cursus | 2 uur",
+                    "PRICE": "128,-"
+                },
+                "INTERIM": {
+                    "NAME": "TTT** (Tussentijdse Toets)",
+                    "PRICE": "275,-"
+                },
+                "PRACTICAL": {
+                    "NAME": "Praktijk (her)examen",
+                    "PRICE": "295,-"
+                },
+                "ANXIETY": {
+                    "NAME": "Faalangst examen",
+                    "PRICE": "360,-"
+                },
+                "BNOR": {
+                    "NAME": "BNOR examen",
+                    "PRICE": "350,-"
+                },
+                "ONLINE": {
+                    "NAME": "Online Theorie",
+                    "PRICE": "50,-"
+                },
+                "EXAM": {
+                    "NAME": "Theorie Examen***",
+                    "PRICE": "70,-"
+                }
+            }
         }
     }
 }
