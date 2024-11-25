@@ -1,4 +1,4 @@
-<main class="flex-1 pt-14">
+<main class="flex-1">
   <section class="w-full py-12 md:py-24 lg:py-32 bg-theme-blue">
     <div class="container px-4 md:px-6">
       <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-white text-center">
@@ -59,24 +59,28 @@
         </div>
 
         <div hlmTabsContent="looseItems">
-          <section hlmCard>
-            <div hlmCardHeader>
-              <h1 hlmCardTitle>Losse Lessen</h1>
+          <div class="grid gap-6">
+            <section hlmCard>
+              <div hlmCardHeader>
+                <h1 class="text-xl font-bold" hlmCardTitle>{{ 'PRICING.INDIVIDUAL_LESSONS.TITLE' | translate }}</h1>
+              </div>
+              <div hlmCardContent>
+                <ul class="space-y-4">
+                  @for (lesson of individualLessons(); track lesson.name) {
+                    <li class="flex items-center justify-between border-b pb-2 last:border-0">
+                      <span>{{ lesson.name | translate }}</span>
+                      <span class="font-semibold text-theme-blue">€{{ lesson.price | translate }}</span>
+                    </li>
+                  }
+                </ul>
+              </div>
+            </section>
+
+            <div class="mt-4 text-sm text-gray-600">
+              <p>* Alleen als je gaat lessen bij Njoy wordt dit bedrag verrekend met je pakket of losse les.</p>
+              <p>**TTT = tussentijdse toets</p>
+              <p>***Theorie examen wordt apart gefactureerd door het CBR</p>
             </div>
-            <div hlmCardContent>
-              <ul class="space-y-2">
-                <!-- @for (item of looseItems; track item.name) {
-                  <li class="flex justify-between">
-                    <span>{{ item.name }}</span>
-                    <span class="font-semibold">{{ item.price }}</span>
-                  </li>
-                } -->
-              </ul>
-            </div>
-          </section>
-          <div class="mt-4 text-sm">
-            <p>* Alleen als je gaat lessen bij Njoy wordt dit bedrag verrekend met je pakket of losse les.</p>
-            <p>**TTT = tussentijdse toets</p>
           </div>
         </div>
       </hlm-tabs>

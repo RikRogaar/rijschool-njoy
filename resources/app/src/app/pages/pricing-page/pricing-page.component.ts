@@ -42,6 +42,16 @@ export class PricingPageComponent {
 
   public currentTab = signal('packages');
 
+  public individualLessons = computed(() => {
+    const lessonsData = this.translate.instant('PRICING.INDIVIDUAL_LESSONS.LESSONS');
+    const lessons = Object.values(lessonsData) as CapitalizedLesson[];
+
+    return lessons.map((lesson: CapitalizedLesson) => ({
+      name: lesson.NAME,
+      price: lesson.PRICE
+    })) as IndividualLesson[];
+  });
+
   public packages = computed(() => {
     const packagesData = this.translate.instant('PRICING.PACKAGES.PACKAGES');
     const packages = Object.values(packagesData) as CapitalizedPackage[];
@@ -61,6 +71,16 @@ export class PricingPageComponent {
 
     return filteredPackages;
   });
+}
+
+export interface CapitalizedLesson {
+  NAME: string;
+  PRICE: string;
+}
+
+export interface IndividualLesson {
+  name: string;
+  price: string;
 }
 
 export interface CapitalizedPackage {
@@ -88,3 +108,4 @@ export interface Feature {
   name: string;
   included: boolean;
 }
+

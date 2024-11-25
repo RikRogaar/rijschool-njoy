@@ -334,6 +334,59 @@
                     ]
                 }
             }
+        },
+        "INDIVIDUAL_LESSONS": {
+            "TITLE": "Losse Lessen",
+            "LESSONS": {
+                "TRIAL": {
+                    "NAME": "Proefles* (60-90 minuten)",
+                    "PRICE": "32,-"
+                },
+                "SINGLE": {
+                    "NAME": "Lesprijs (60 minuten)",
+                    "PRICE": "64,-"
+                },
+                "SINGLE_EXTENDED": {
+                    "NAME": "Lesprijs 1,5u (90 minuten)",
+                    "PRICE": "96,-"
+                },
+                "CARD_5": {
+                    "NAME": "Njoy leskaart 1 | 5 lessen",
+                    "PRICE": "315,-"
+                },
+                "CARD_10": {
+                    "NAME": "Njoy leskaart 2 | 10 lessen",
+                    "PRICE": "630,-"
+                },
+                "REFRESH": {
+                    "NAME": "Njoy opfris cursus | 2 uur",
+                    "PRICE": "128,-"
+                },
+                "INTERIM": {
+                    "NAME": "TTT** (Tussentijdse Toets)",
+                    "PRICE": "275,-"
+                },
+                "PRACTICAL": {
+                    "NAME": "Praktijk (her)examen",
+                    "PRICE": "295,-"
+                },
+                "ANXIETY": {
+                    "NAME": "Faalangst examen",
+                    "PRICE": "360,-"
+                },
+                "BNOR": {
+                    "NAME": "BNOR examen",
+                    "PRICE": "350,-"
+                },
+                "ONLINE": {
+                    "NAME": "Online Theorie",
+                    "PRICE": "50,-"
+                },
+                "EXAM": {
+                    "NAME": "Theorie Examen***",
+                    "PRICE": "70,-"
+                }
+            }
         }
     }
 }
