@@ -25,6 +25,14 @@
                     </div>
                     <div hlmCardContent>
                         <form [formGroup]="form" (ngSubmit)="onSubmit()" class="space-y-4">
+                            <div class="space-y-2">
+                                <app-select-input
+                                    [group]="form"
+                                    controlName="subject"
+                                    [label]="'CONTACT.FORM.INPUTS.SUBJECT.LABEL' | translate"
+                                    [placeholder]="'CONTACT.FORM.INPUTS.SUBJECT.PLACEHOLDER' | translate"
+                                    [options]="subjectOptions()" />
+                            </div>
                             <div class="grid gap-4 sm:grid-cols-2">
                                 <div class="space-y-2">
                                     <app-text-input [group]="form" controlName="firstName"
@@ -46,6 +54,23 @@
                                 <app-text-input [group]="form" controlName="phone"
                                     [label]="'CONTACT.FORM.INPUTS.PHONE.LABEL' | translate"
                                     [placeholder]="'CONTACT.FORM.INPUTS.PHONE.PLACEHOLDER' | translate" />
+                            </div>
+                            <div class="space-y-2">
+                                <app-text-input [group]="form" controlName="address"
+                                    [label]="'CONTACT.FORM.INPUTS.ADDRESS.LABEL' | translate"
+                                    [placeholder]="'CONTACT.FORM.INPUTS.ADDRESS.PLACEHOLDER' | translate" />
+                            </div>
+                            <div class="grid gap-4 sm:grid-cols-2">
+                                <div class="space-y-2">
+                                    <app-text-input [group]="form" controlName="postal_code"
+                                        [label]="'CONTACT.FORM.INPUTS.POSTAL_CODE.LABEL' | translate"
+                                        [placeholder]="'CONTACT.FORM.INPUTS.POSTAL_CODE.PLACEHOLDER' | translate" />
+                                </div>
+                                <div class="space-y-2">
+                                    <app-text-input [group]="form" controlName="city"
+                                        [label]="'CONTACT.FORM.INPUTS.CITY.LABEL' | translate"
+                                        [placeholder]="'CONTACT.FORM.INPUTS.CITY.PLACEHOLDER' | translate" />
+                                </div>
                             </div>
                             <div class="space-y-2">
                                 <app-text-area-input [group]="form" controlName="message"

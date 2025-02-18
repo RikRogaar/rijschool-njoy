@@ -1,0 +1,22 @@
+<ng-container [formGroup]="group">
+    <div class="w-full">
+        <label
+            hlmLabel
+            [for]="controlName"
+        >{{ label | translate }}</label>
+        <brn-select
+            class="inline-block w-full"
+            [placeholder]="placeholder | translate"
+            [multiple]="multiple"
+            [formControlName]="controlName">
+            <hlm-select-trigger class="w-full">
+                <hlm-select-value />
+            </hlm-select-trigger>
+            <hlm-select-content>
+                @for (option of options; track option['VALUE']) {
+                    <hlm-option [value]="option['VALUE']">{{ option['NAME'] }}</hlm-option>
+                }
+            </hlm-select-content>
+        </brn-select>
+    </div>
+</ng-container>

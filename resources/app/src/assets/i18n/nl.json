@@ -428,6 +428,36 @@
                     "LABEL": "Telefoon",
                     "PLACEHOLDER": "Voer je telefoonnummer in"
                 },
+                "ADDRESS": {
+                    "LABEL": "Adres",
+                    "PLACEHOLDER": "Voer je adres in"
+                },
+                "POSTAL_CODE": {
+                    "LABEL": "Postcode",
+                    "PLACEHOLDER": "Voer je postcode in"
+                },
+                "CITY": {
+                    "LABEL": "Plaats",
+                    "PLACEHOLDER": "Voer je plaats in"
+                },
+                "SUBJECT": {
+                    "LABEL": "Onderwerp",
+                    "PLACEHOLDER": "Selecteer een onderwerp",
+                    "OPTIONS": [
+                        {
+                            "NAME": "Ik wil meer informatie",
+                            "VALUE": "information"
+                        },
+                        {
+                            "NAME": "Ik wil een proefles",
+                            "VALUE": "book_lesson"
+                        },
+                        {
+                            "NAME": "Ik wil gebeld worden",
+                            "VALUE": "call_back"
+                        }
+                    ]
+                },
                 "MESSAGE": {
                     "LABEL": "Bericht",
                     "PLACEHOLDER": "Voer je bericht in"
