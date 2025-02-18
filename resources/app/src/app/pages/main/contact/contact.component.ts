@@ -1,14 +1,14 @@
 import { Component, computed, inject, OnInit } from '@angular/core';
-import { SharedModule } from '../../shared.module';
+import { SharedModule } from '../../../shared.module';
 import { HlmIconComponent, provideIcons } from '@spartan-ng/ui-icon-helm';
 import { FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { FormControl } from '@angular/forms';
 import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
-import { TextInputComponent } from '../../components/inputs/text-input/text-input.component';
-import { TextAreaInputComponent } from '../../components/inputs/text-area-input/text-area-input.component';
+import { TextInputComponent } from '../../../components/inputs/text-input/text-input.component';
+import { TextAreaInputComponent } from '../../../components/inputs/text-area-input/text-area-input.component';
 import { lucidePhone, lucideMail, lucideMapPin, lucideChevronDown, lucideChevronUp } from '@ng-icons/lucide';
 import { HlmCardImports } from '@spartan-ng/ui-card-helm';
-import { SelectInputComponent } from '../../components/inputs/select-input/select-input.component';
+import { SelectInputComponent } from '../../../components/inputs/select-input/select-input.component';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -71,3 +71,5 @@ export interface CapitalizedOption {
   NAME: string;
   VALUE: string;
 }
+
+// @TODO: Fix contact form and make it work with the backend

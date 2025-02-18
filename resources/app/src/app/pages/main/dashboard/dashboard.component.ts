@@ -11,7 +11,7 @@ import { HlmIconComponent } from '@spartan-ng/ui-icon-helm';
 import { provideIcons } from '@ng-icons/core';
 import { lucideBookOpenCheck, lucideGift, lucideShieldCheck, lucideCircleCheck } from '@ng-icons/lucide';
 import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
-import { SharedModule } from '../../shared.module';
+import { SharedModule } from '../../../shared.module';
 
 @Component({
   selector: 'app-dashboard',

@@ -1,5 +1,5 @@
 import { Component, inject, Signal, signal, computed } from '@angular/core';
-import { SharedModule } from '../../shared.module';
+import { SharedModule } from '../../../shared.module';
 import {
   HlmCardContentDirective,
   HlmCardDirective,

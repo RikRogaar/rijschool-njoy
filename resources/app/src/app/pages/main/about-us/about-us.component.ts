@@ -11,7 +11,7 @@ import { HlmIconComponent, HlmIconModule } from '@spartan-ng/ui-icon-helm';
 import { provideIcons } from '@ng-icons/core';
 import { lucideShieldCheck, lucideUser, lucideClock } from '@ng-icons/lucide';
 import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
-import { SharedModule } from '../../shared.module';
+import { SharedModule } from '../../../shared.module';
 import { HlmTabsComponent, HlmTabsListComponent, HlmTabsTriggerDirective, HlmTabsContentDirective } from '@spartan-ng/ui-tabs-helm';
 import {Map, View} from 'ol';
 import TileLayer from 'ol/layer/Tile';

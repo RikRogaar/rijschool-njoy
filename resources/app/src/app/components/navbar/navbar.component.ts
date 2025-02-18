@@ -1,18 +1,24 @@
 import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { SharedModule } from '../../shared.module';
+import { HlmIconModule, provideIcons } from '@spartan-ng/ui-icon-helm';
+import { lucideCircleUser } from '@ng-icons/lucide';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
   imports: [
     SharedModule,
+    HlmIconModule
+  ],
+  providers: [
+    provideIcons({ lucideCircleUser })
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-  private readonly router = inject(Router);
+  protected readonly router = inject(Router);
 
   public readonly routes = [
     { path: '/dashboard', label: 'NAVBAR.DASHBOARD' },
