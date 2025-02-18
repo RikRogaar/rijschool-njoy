@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { SharedModule } from '../../shared.module';
 import { HlmIconComponent, provideIcons } from '@spartan-ng/ui-icon-helm';
 import { HlmCardContentDirective, HlmCardDescriptionDirective, HlmCardFooterDirective } from '@spartan-ng/ui-card-helm';
@@ -7,12 +7,11 @@ import { HlmCardHeaderDirective } from '@spartan-ng/ui-card-helm';
 import { HlmCardTitleDirective } from '@spartan-ng/ui-card-helm';
 import { FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { FormControl } from '@angular/forms';
-import { HlmInputDirective } from '@spartan-ng/ui-input-helm';
 import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
-import { HlmLabelDirective } from '@spartan-ng/ui-label-helm';
 import { TextInputComponent } from '../../components/inputs/text-input/text-input.component';
 import { TextAreaInputComponent } from '../../components/inputs/text-area-input/text-area-input.component';
 import { lucidePhone, lucideMail, lucideMapPin } from '@ng-icons/lucide';
+
 @Component({
   selector: 'app-contact',
   standalone: true,

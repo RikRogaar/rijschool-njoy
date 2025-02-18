@@ -11,7 +11,7 @@
                         {{ 'ABOUT_US.HERO.DESCRIPTION' | translate }}
                     </p>
                 </div>
-                <button hlmBtn size="lg" variant="secondary" class="text-theme-blue">{{ 'ABOUT_US.HERO.BUTTON' | translate }}</button>
+                <button hlmBtn size="lg" variant="secondary" class="text-theme-blue" [routerLink]="['/contact']">{{ 'ABOUT_US.HERO.BUTTON' | translate }}</button>
             </div>
         </div>
     </section>
@@ -135,6 +135,16 @@
           </hlm-tabs>
         </div>
       </section>
+      <section class="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+        <div class="container px-4 md:px-6">
+            <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">{{
+                'ABOUT_US.MAP.TITLE' | translate }}</h2>
+            <div id="ol-map" class="w-full h-[400px] rounded-sm border-4 border-theme-blue shadow-lg"></div>
+            <p class="text-center mt-4">{{ 'ABOUT_US.MAP.DESCRIPTION_1' | translate }}</p>
+            <p class="text-center">{{ 'ABOUT_US.MAP.DESCRIPTION_2' | translate }}</p>
+            <p class="text-center text-gray-600 font-bold">{{ 'ABOUT_US.MAP.DESCRIPTION_3' | translate }}</p>
+        </div>
+    </section>
       <section id="book-lesson" class="w-full py-12 md:py-24 lg:py-32 bg-theme-blue">
         <div class="container px-4 md:px-6">
           <div class="flex flex-col items-center space-y-4 text-center">
@@ -146,7 +156,7 @@
                 {{ 'ABOUT_US.BOOK_LESSON.DESCRIPTION' | translate }}
               </p>
             </div>
-            <button hlmBtn size="lg" variant="secondary" class="text-theme-blue">{{ 'ABOUT_US.BOOK_LESSON.BUTTON' | translate }}</button>
+            <button hlmBtn size="lg" variant="secondary" class="text-theme-blue" [routerLink]="['/contact']">{{ 'ABOUT_US.BOOK_LESSON.BUTTON' | translate }}</button>
           </div>
         </div>
       </section>

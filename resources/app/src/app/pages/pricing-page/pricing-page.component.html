@@ -2,10 +2,10 @@
   <section class="w-full py-12 md:py-24 lg:py-32 bg-theme-blue">
     <div class="container px-4 md:px-6">
       <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-white text-center">
-        Tarieven 2024
+        {{ 'PRICING.TITLE' | translate }}
       </h1>
       <p class="mt-4 text-xl text-white/80 text-center max-w-[700px] mx-auto">
-        Ontdek onze competitieve prijzen voor rijlessen en pakketten. Kies het pakket dat het beste bij jou past.
+        {{ 'PRICING.DESCRIPTION' | translate }}
       </p>
     </div>
   </section>
@@ -14,8 +14,8 @@
     <div class="container px-4 md:px-6">
       <hlm-tabs [tab]="currentTab()" class="w-full">
         <hlm-tabs-list class="grid w-full grid-cols-2 mb-8">
-          <button hlmTabsTrigger="packages">Pakketten</button>
-          <button hlmTabsTrigger="looseItems">Losse Items</button>
+          <button hlmTabsTrigger="packages">{{ 'PRICING.PACKAGES.PACKAGES_TITLE' | translate }}</button>
+          <button hlmTabsTrigger="looseItems">{{ 'PRICING.PACKAGES.LOOSE_ITEMS_TITLE' | translate }}</button>
         </hlm-tabs-list>
 
         <div hlmTabsContent="packages">
@@ -26,7 +26,7 @@
 
                   <h1 class="text-xl font-bold" hlmCardTitle>{{ package.name | translate }}</h1>
                   @if (package.popular) {
-                    <span class="text-green-500 font-semibold">Meest Gekozen!</span>
+                    <span class="text-green-500 font-semibold">{{ 'PRICING.PACKAGES.MOST_POPULAR' | translate }}</span>
                   }
                 </div>
                 <div hlmCardContent>
@@ -45,15 +45,15 @@
                   </ul>
                 </div>
                 <div hlmCardFooter>
-                  <button hlmBtn class="w-full bg-theme-blue hover:bg-theme-blue/90">Aanvragen</button>
+                  <button hlmBtn class="w-full bg-theme-blue hover:bg-theme-blue/90" [routerLink]="['/contact']">{{ 'PRICING.PACKAGES.REQUEST_BUTTON' | translate }}</button>
                 </div>
               </section>
             }
 
             <div class="mt-4 col-span-3 text-center">
-              <p>Er zijn meer mogelijkheden, zo kun je in overleg met rijschool Njoy bijvoorbeeld zelf een pakket samenstellen.</p>
-              <p>Pakketten kunnen ook in termijnen voldaan worden, vraag naar de mogelijkheden.</p>
-              <p class="font-bold">Bij afname van pakket Njoy 3 t/m 7, nu gratis online itheorie les!</p>
+              <p>{{ 'PRICING.PACKAGES.PACKAGES_DESCRIPTION_1' | translate }}</p>
+              <p>{{ 'PRICING.PACKAGES.PACKAGES_DESCRIPTION_2' | translate }}</p>
+              <p class="font-bold">{{ 'PRICING.PACKAGES.PACKAGES_DESCRIPTION_3' | translate }}</p>
             </div>
           </div>
         </div>
@@ -77,9 +77,9 @@
             </section>
 
             <div class="mt-4 text-sm text-gray-600">
-              <p>* Alleen als je gaat lessen bij Njoy wordt dit bedrag verrekend met je pakket of losse les.</p>
-              <p>**TTT = tussentijdse toets</p>
-              <p>***Theorie examen wordt apart gefactureerd door het CBR</p>
+              <p>{{ 'PRICING.INDIVIDUAL_LESSONS.DESCRIPTION_1' | translate }}</p>
+              <p>{{ 'PRICING.INDIVIDUAL_LESSONS.DESCRIPTION_2' | translate }}</p>
+              <p>{{ 'PRICING.INDIVIDUAL_LESSONS.DESCRIPTION_3' | translate }}</p>
             </div>
           </div>
         </div>

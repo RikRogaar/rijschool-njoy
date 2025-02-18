@@ -2,7 +2,8 @@
     "NAVBAR": {
         "DASHBOARD": "Home",
         "ABOUT_US": "Over ons",
-        "PRICING": "Tarieven"
+        "PRICING": "Tarieven",
+        "CONTACT": "Contact"
     },
     "DASHBOARD": {
         "HERO": {
@@ -130,12 +131,27 @@
             "TITLE": "Klaar om te beginnen?",
             "DESCRIPTION": "Boek nu je proefles vandaag nog en neem je eerste stap om een zelfverzekerde bestuurder te worden.",
             "BUTTON": "Boek je proefles"
+        },
+        "MAP": {
+            "TITLE": "Onze Locatie",
+            "DESCRIPTION_1": "Woon je binnen de cirkel dan kun je altijd bij Njoy lessen.",
+            "DESCRIPTION_2": "Ook als je verder weg woont kun je bij Rijschool Njoy lessen, b.v. als je naar station Zuidbroek of Veendam kunt reizen.",
+            "DESCRIPTION_3": "Informatie over de mogelijkheden kun je altijd bij ons opvragen."
         }
     },
     "PRICING": {
+        "TITLE": "Tarieven",
+        "DESCRIPTION": "Ontdek onze competitieve prijzen voor rijlessen en pakketten. Kies het pakket dat het beste bij jou past.",
         "PACKAGES": {
             "TITLE": "Pakketten",
-            "DESCRIPTION": "Er zijn meer mogelijkheden, zo kun je in overleg met rijschool Njoy bijvoorbeeld zelf een pakket samenstellen.",
+            "DESCRIPTION": "Ontdek onze competitieve prijzen voor rijlessen en pakketten. Kies het pakket dat het beste bij jou past.",
+            "PACKAGES_DESCRIPTION_1": "Er zijn meer mogelijkheden, zo kun je in overleg met rijschool Njoy bijvoorbeeld zelf een pakket samenstellen.",
+            "PACKAGES_DESCRIPTION_2": "Pakketten kunnen ook in termijnen voldaan worden, vraag naar de mogelijkheden.",
+            "PACKAGES_DESCRIPTION_3": "Bij afname van pakket Njoy 3 t/m 7, nu gratis online itheorie les!",
+            "PACKAGES_TITLE": "Pakketten",
+            "LOOSE_ITEMS_TITLE": "Losse Items",
+            "MOST_POPULAR": "Meest Gekozen!",
+            "REQUEST_BUTTON": "Aanvragen",
             "PACKAGES": {
                 "NJOY_1": {
                     "IDENTIFIER": "NJOY_1",
@@ -337,6 +353,9 @@
         },
         "INDIVIDUAL_LESSONS": {
             "TITLE": "Losse Lessen",
+            "DESCRIPTION_1": "Alleen als je gaat lessen bij Njoy wordt dit bedrag verrekend met je pakket of losse les.",
+            "DESCRIPTION_2": "**TTT = tussentijdse toets",
+            "DESCRIPTION_3": "***Theorie examen wordt apart gefactureerd door het CBR",
             "LESSONS": {
                 "TRIAL": {
                     "NAME": "Proefles* (60-90 minuten)",

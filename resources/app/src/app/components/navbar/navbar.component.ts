@@ -18,6 +18,7 @@ export class NavbarComponent {
     { path: '/dashboard', label: 'NAVBAR.DASHBOARD' },
     { path: '/about-us', label: 'NAVBAR.ABOUT_US' },
     { path: '/pricing', label: 'NAVBAR.PRICING' },
+    { path: '/contact', label: 'NAVBAR.CONTACT' },
   ];
 
   public isOpen = false;
