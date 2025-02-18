@@ -1,0 +1,15 @@
+<ng-container [formGroup]="group">
+    <label
+        hlmLabel
+        for="firstName"
+    >{{ label | translate }}</label>
+    <textarea
+        hlmInput
+        class="w-full min-h-[80px]"
+        [formControlName]="controlName"
+        [placeholder]="placeholder | translate"
+    ></textarea>
+    <hlm-error *ngIf="control?.errors?.['required'] && control?.touched">
+        {{ 'FORM.ERRORS.REQUIRED' | translate }}
+    </hlm-error>
+</ng-container>

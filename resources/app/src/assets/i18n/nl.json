@@ -106,7 +106,7 @@
                 },
                 "COMFORT": {
                     "TITLE": "Comfort voor Alle",
-                    "DESCRIPTION": "De Kia Sportage Hybrid is een moderne auto met een elektrische motor en een benzine motor, wat betekent dat je kunt rijden zonder gebruik te maken van fossiele brandstoffen.",
+                    "DESCRIPTION": "Onze lesauto is ontworpen met het comfort van elke leerling in gedachten. De ruime en aanpasbare cockpit zorgt ervoor dat iedereen, ongeacht lengte of postuur, comfortabel kan leren rijden.",
                     "LIST": [
                         "Geschikt voor zowel korte als lange personen (2m+ is geen probleem)",
                         "Volledig aanpasbare zittingen voor optimale positie",
@@ -116,7 +116,7 @@
                 },
                 "SAFETY": {
                     "TITLE": "Veiligheid",
-                    "DESCRIPTION": "De Kia Sportage Hybrid is een moderne auto met een elektrische motor en een benzine motor, wat betekent dat je kunt rijden zonder gebruik te maken van fossiele brandstoffen.",
+                    "DESCRIPTION": "Veiligheid staat voorop bij het leren autorijden. De Kia Sportage is uitgerust met de nieuwste veiligheidstechnologieën en heeft de hoogste veiligheidsbeoordelingen behaald.",
                     "LIST": [
                         "Maximaal 5-sterren NCAP veiligheidsrating",
                         "Geavanceerde rijbegeleiding voor verbeterde veiligheid",
@@ -388,5 +388,65 @@
                 }
             }
         }
+    },
+    "CONTACT": {
+        "FORM": {
+            "TITLE": "Stuur ons een bericht",
+            "INPUTS": {
+                "FIRST_NAME": {
+                    "LABEL": "Voornaam",
+                    "PLACEHOLDER": "Voer je voornaam in"
+                },
+                "LAST_NAME": {
+                    "LABEL": "Achternaam",
+                    "PLACEHOLDER": "Voer je achternaam in"
+                },
+                "EMAIL": {
+                    "LABEL": "Email",
+                    "PLACEHOLDER": "Voer je email in"
+                },
+                "PHONE": {
+                    "LABEL": "Telefoon",
+                    "PLACEHOLDER": "Voer je telefoonnummer in"
+                },
+                "MESSAGE": {
+                    "LABEL": "Bericht",
+                    "PLACEHOLDER": "Voer je bericht in"
+                }
+            },
+            "BUTTON": "Verstuur"
+        }
+    },
+    "FORM": {
+        "ERRORS": {
+            "REQUIRED": "Dit veld is verplicht",
+            "EMAIL": "Voer een geldig e-mailadres in"
+        }
+    },
+    "CONTACT_INFO": {
+        "TITLE": "Contactgegevens",
+        "PHONE": "06 426 426 48",
+        "EMAIL": "info@rijschoolnjoy.nl",
+        "ADDRESS_FULL": "Vossenburcht 41, 9648 KD Muntendam",
+        "ADDRESS_SPLIT_1": "Vossenburcht 41",
+        "ADDRESS_SPLIT_2": "9648 KD Muntendam"
+    },
+    "OPENING_HOURS": {
+        "TITLE": "Openingstijden",
+        "MONDAY-TUESDAY": {
+            "TEXT": "Maandag - Vrijdag",
+            "HOURS": "09:00 - 18:00"
+        },
+        "SATURDAY": {
+            "TEXT": "Zaterdag",
+            "HOURS": "10:00 - 16:00"
+        },
+        "SUNDAY": {
+            "TEXT": "Zondag",
+            "HOURS": "gesloten"
+        }
+    },
+    "FOOTER": {
+        "COPYRIGHT": "© 2025 Rijschool Njoy. Alle rechten voorbehouden."
     }
 }

@@ -6,6 +6,7 @@
         "dev": "vite"
     },
     "devDependencies": {
+        "@spartan-ng/cli": "^0.0.1-alpha.380",
         "autoprefixer": "^10.4.20",
         "axios": "^1.7.4",
         "concurrently": "^9.0.1",
@@ -13,5 +14,9 @@
         "postcss": "^8.4.47",
         "tailwindcss": "^3.4.13",
         "vite": "^5.0"
+    },
+    "dependencies": {
+        "@ng-icons/core": "^30.2.0",
+        "@ng-icons/lucide": "^30.2.0"
     }
 }

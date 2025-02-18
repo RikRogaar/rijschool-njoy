@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ButtonComponent } from '../../components/button/button.component';
 import {
   HlmCardContentDirective,
   HlmCardDescriptionDirective,
@@ -18,7 +17,6 @@ import { SharedModule } from '../../shared.module';
   selector: 'app-dashboard',
   standalone: true,
   imports: [
-    ButtonComponent,
     HlmCardDirective,
     HlmCardHeaderDirective,
     HlmCardTitleDirective,

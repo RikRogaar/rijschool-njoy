@@ -1,0 +1,21 @@
+<ng-container [formGroup]="group">
+    <label
+        hlmLabel
+        [for]="controlName"
+    >{{ label | translate }}</label>
+    <hlm-form-field>
+        <input
+            hlmInput
+            class="w-full"
+            [id]="controlName"
+            [formControlName]="controlName"
+            [placeholder]="placeholder | translate"
+        />
+        <hlm-error *ngIf="control?.errors?.['required'] && control?.touched">
+            {{ 'FORM.ERRORS.REQUIRED' | translate }}
+        </hlm-error>
+        <hlm-error *ngIf="control?.errors?.['email'] && control?.touched">
+            {{ 'FORM.ERRORS.EMAIL' | translate }}
+        </hlm-error>
+    </hlm-form-field>
+</ng-container>
