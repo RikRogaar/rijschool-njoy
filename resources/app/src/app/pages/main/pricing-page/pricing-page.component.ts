@@ -35,6 +35,7 @@ import { TranslateService } from '@ngx-translate/core';
     provideIcons({ lucideCheck, lucideX })
   ],
   templateUrl: './pricing-page.component.html',
+  styleUrls: ['./pricing-page.component.scss']
 })
 export class PricingPageComponent {
   private readonly translate = inject(TranslateService);

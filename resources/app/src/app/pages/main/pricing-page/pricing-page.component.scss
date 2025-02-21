@@ -1,0 +1,5 @@
+@import '../../../../styles/mixins/svg-pattern';
+
+.hero-banner {
+  @include pattern($steering-wheel-svg);
+}

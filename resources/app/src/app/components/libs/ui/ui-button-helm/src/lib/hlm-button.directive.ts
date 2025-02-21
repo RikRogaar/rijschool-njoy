@@ -3,6 +3,16 @@ import { hlm } from '@spartan-ng/ui-core';
 import { type VariantProps, cva } from 'class-variance-authority';
 import type { ClassValue } from 'clsx';
 
+export type PatternName = 'car-front' | 'car-wheel' | 'engine' | 'id-card' | 'steering-wheel';
+
+const patternMap: Record<PatternName, string> = {
+	'car-front': '../../../assets/svgs/car-front.svg',
+	'car-wheel': '../../../assets/svgs/car-wheel.svg',
+	'engine': '../../../assets/svgs/engine.svg',
+	'id-card': '../../../assets/svgs/id-card.svg',
+	'steering-wheel': '../../../assets/svgs/steering-wheel.svg'
+};
+
 export const buttonVariants = cva(
 	'inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background',
 	{
@@ -35,14 +45,49 @@ export type ButtonVariants = VariantProps<typeof buttonVariants>;
 	standalone: true,
 	host: {
 		'[class]': '_computedClass()',
+		'[style.background-image]': '_pattern()',
+		'[style.background-size]': '_patternSize()',
 	},
 })
 export class HlmButtonDirective {
+	private readonly _patternName = signal<PatternName | undefined>(undefined);
+	private readonly _patternSizeValue = signal<string>('35px');
+
+	@Input()
+	set pattern(value: PatternName | undefined) {
+		this._patternName.set(value);
+	}
+
+	@Input()
+	set patternSize(value: string) {
+		this._patternSizeValue.set(value);
+	}
+
+	protected _pattern = computed(() => {
+		const pattern = this._patternName();
+
+		if (!pattern) return '';
+
+		const svgPath = patternMap[pattern];
+
+		return `url(${svgPath})`;
+	});
+
+	protected _patternSize = computed(() => {
+		const size = this._patternSizeValue();
+		return this._patternName() ? `${size} ${size}` : '';
+	});
+
 	public readonly userClass = input<ClassValue>('', { alias: 'class' });
 	private readonly _settableClass = signal<ClassValue>('');
 
 	protected _computedClass = computed(() =>
-		hlm(buttonVariants({ variant: this._variant(), size: this._size() }), this._settableClass(), this.userClass()),
+		hlm(
+			buttonVariants({ variant: this._variant(), size: this._size() }),
+			this._patternName() ? 'bg-[0_0]' : '',
+			this._settableClass(),
+			this.userClass()
+		),
 	);
 
 	setClass(value: ClassValue) {

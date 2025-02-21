@@ -1,0 +1,12 @@
+@mixin pattern($svg-path, $size: 35px) {
+  background-image: $svg-path;
+  background-position: center center;
+  background-size: $size $size;
+  background-repeat: repeat;
+}
+
+$car-front-svg: url('../../assets/svgs/car-front.svg');
+$car-wheel-svg: url('../../assets/svgs/car-wheel.svg');
+$engine-svg: url('../../assets/svgs/engine.svg');
+$id-card-svg: url('../../assets/svgs/id-card.svg');
+$steering-wheel-svg: url('../../assets/svgs/steering-wheel.svg');

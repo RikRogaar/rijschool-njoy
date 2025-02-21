@@ -46,10 +46,12 @@
                         @for (route of routes; track route.path) {
                             <a [routerLink]="[route.path]" [ngClass]="isActiveClass(route.path)">{{ route.label | translate }}</a>
                         }
-                        <div class="flex items-center cursor-pointer" (click)="router.navigate(['/auth/login'])">
+
+                        <!-- @TODO: Implement login -->
+                        <!-- <div class="flex items-center cursor-pointer" (click)="router.navigate(['/auth/login'])">
                             <hlm-icon name="lucideCircleUser" size="sm" class="text-theme-blue" />
                             <span class="route !pl-1">Inloggen</span>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

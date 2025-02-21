@@ -21,8 +21,8 @@
                     </div>
                     <div class="flex flex-col gap-2 min-[400px]:flex-row">
 
-                        <button hlmBtn size="lg" variant="secondary" class="text-theme-blue">{{ 'DASHBOARD.HERO.BOOK_LESSON' | translate }}</button>
-                        <button hlmBtn size="lg" variant="outline">{{ 'DASHBOARD.HERO.LEARN_MORE' | translate }}</button>
+                        <button hlmBtn size="lg" variant="secondary" class="text-theme-blue" [routerLink]="['/contact']">{{ 'DASHBOARD.HERO.BOOK_LESSON' | translate }}</button>
+                        <button hlmBtn size="lg" variant="outline" [routerLink]="['/about-us']">{{ 'DASHBOARD.HERO.LEARN_MORE' | translate }}</button>
                     </div>
                 </div>
                 <div class="hidden lg:block">
@@ -171,7 +171,7 @@
             </p>
           </div>
           <div class="w-full max-w-sm space-y-2">
-            <button hlmBtn size="lg" class="w-full bg-theme-blue text-white hover:bg-theme-blue/90">
+            <button hlmBtn size="lg" class="w-full bg-theme-blue text-white hover:bg-theme-blue/90" pattern="engine" patternSize="25px" [routerLink]="['/contact']">
               {{ 'DASHBOARD.CONTACT.BUTTON' | translate }}
             </button>
           </div>
